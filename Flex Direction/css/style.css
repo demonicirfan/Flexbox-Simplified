@@ -9,7 +9,7 @@
 }
 
 .flex:nth-child(1) {
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
 }
 
 @media (min-width: 700px) {
@@ -17,11 +17,4 @@
     flex-direction: row;
   }
 
-  .flex:nth-child(1) {
-    flex-direction: row;
-  }
-
-  .flex:nth-of-type(2) {
-    flex-direction: row-reverse;
-  }
 }
