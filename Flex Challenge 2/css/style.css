@@ -20,23 +20,32 @@
 
 
 */
-
 .profile-card {
   max-width: 45rem;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
   margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
 }
 
+@media (min-width: 40em) {
+  .profile-card {
+    flex-direction: row;
+  }
+}
 .card__header,
 .card__body {
   padding: 2rem;
 }
 
 .card__header {
-  background-image: url("../img/flexible-joe.jpg");
+  background-image: url('../img/flexible-joe.jpg');
   background-color: hsl(19, 93%, 27%);
   background-blend-mode: overlay;
   background-size: cover;
   background-position: cover;
   color: #fff;
+  flex-basis: 18rem;
+  flex-grow:0;
+  flex-shrink: 0;
 }
