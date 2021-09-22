@@ -27,6 +27,7 @@
 .flex-layout {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flex-layout header {
@@ -58,11 +59,13 @@ footer {
 
 main {
   padding: 3rem;
-  flex-wrap: 56rem;
+  flex-basis: 56rem;
+  flex-grow: 2;
 }
 
 aside {
   font-size: 1.125rem;
   padding: 3rem;
-  flex-wrap: 25rem;
+  flex-basis: 25rem;
+  flex-grow: 1;
 }
