@@ -26,3 +26,16 @@ aside {
   border: 4px solid black;
   padding: 1em;
 }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.modifier > * {
+  flex-basis: 1%;
+  flex-grow: 1;
+}
+
