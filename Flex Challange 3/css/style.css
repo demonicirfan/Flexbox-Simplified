@@ -26,6 +26,7 @@
 
 .flex-layout {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-layout header {
@@ -34,11 +35,11 @@
   justify-content: space-between;
 }
 
-@media (min-width: 420px) {
+/* @media (min-width: 420px) {
   .flex-layout {
     flex-direction: column;
   }
-}
+} */
 
 .align-center {
   align-self: center;
@@ -46,6 +47,7 @@
 
 header,
 footer {
+  width: 100%;
   background: black;
   color: white;
   padding: 2rem;
@@ -56,9 +58,11 @@ footer {
 
 main {
   padding: 3rem;
+  flex-wrap: 56rem;
 }
 
 aside {
   font-size: 1.125rem;
   padding: 3rem;
+  flex-wrap: 25rem;
 }
